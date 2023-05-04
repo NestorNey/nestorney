@@ -16,7 +16,7 @@ header{
     z-index: 10;
 }
 header.abajo{
-    background: #153e63;
+    background: black;
 
 }
 
@@ -64,32 +64,34 @@ header.abajo ul li a{
 
 
 body{
-    background-color: #164772;
+    background-color: #1E1E1E ;
     height: 100vw;
 }
 
-#home{
+#message{
     margin-top: calc(12vmin + 12vmax);
     text-align: center;
     display: flex;
     justify-content: center;
-    height: calc(14vmin + 14vmax);;
+    height: calc(14vmin + 14vmax);
+    
 }
 
-#home img{
+#message img{
     margin-right: calc(1vmax + 1vmin);;
     width: calc(6.5vmax + 6.5vmin);
     height: calc(6.5vmax + 6.5vmin);
     background-color: #89D99C;
     border-radius: calc(2.5vmax + 2.5vmin);
+    box-shadow: 5px 5px 15px -6px rgba(0,0,0,0.75);
 }
 
-#home h1{
+#message h1{
     margin-top: calc(1.2vmax + 1.2vmin);
     font-size: calc(1.4vmax + 1.4vmin);
     padding-top: calc(1vmax + 1vmin);
     padding-bottom: calc(-1vmax + -1vmin);
-
+    box-shadow: 5px 5px 15px -6px rgba(0,0,0,0.75);
     color: #0B2B40;
     background-color: #89D99C;
     height: calc(2.8vmax + 2.8vmin);
@@ -99,19 +101,24 @@ body{
 
 #about{
     margin-top: calc(6vmin + 6vmax);
-    text-align: center;
-    display: flex;
-    justify-content: center;
     background-color: #89D99C;
     padding: calc(2vmax + 2vmin) calc(2vmax + 2vmin);
-    height: calc(15vmax + 15vmin);
+    height: calc(18vmax + 18vmin);
     margin-left: 4%;
     border-top-left-radius: calc(14vmin + 14vmax);
     border-bottom-left-radius: calc(5vmin + 5vmax);
+    box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
+}
+
+#about #line-1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: calc(5vmin + 5vmax);
 }
 
 #about #back{
-    margin-right: calc(1vmax + 1vmin);;
+    margin-right: calc(1vmax + 1vmin);
     width: calc(14vmax + 14vmin);
     height: calc(14vmax + 14vmin);
     background-color: #d7ddff;
@@ -129,7 +136,6 @@ body{
 }
 
 #about #text{
-    padding-left: calc(5vmin + 5vmax);
     margin-right: calc(3.5vmax + 3.5vmin);
     margin-top: calc(1vmax + 1vmin);
 }
@@ -137,7 +143,7 @@ body{
 #about #title{
     font-size: calc(1.8vmax + 1.8vmin);
     text-align: left;
-    color: #164772;
+    color: #0B2B40;
     font-family:'Gill Sans MT';
 }
 
@@ -145,7 +151,21 @@ body{
     font-size: calc(1vmax + 1vmin);
     font-weight: 500;
     text-align: justify;
-    color: #164772;
+    color: #0B2B40;
     font-family:arial;
     margin-top: calc(1vmax + .5vmin);
+}
+
+#about #contactButton{
+    text-align: center;
+    padding-top: calc(.6vmax + .6vmin);
+    padding-bottom: calc(.4vmax + .4vmin);
+    color: #d7ddff;
+    background-color: #0B2B40;
+    margin-left: calc(5vmin + 5vmax);
+    width: 10%;
+    height: 9%;
+    font-size: calc(.9vmax + .9vmin);
+    border-radius: calc(.5vmin + .5vmax);
+    cursor: pointer;
 }
