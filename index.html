@@ -1,60 +1,13 @@
-<!DOCTYPE html>
-
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NestorNey</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-		<a href="#" class="logo">NestorNey</a>
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#aboutR">About</a></li>
-				<li><a href="#skills">Skills</a></li>
-                <li><a href="#">Education</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-    <div id="message" data-aos="fade-down" data-aos-duration="1500">
-        <img src="img/a.png">
-        <h1>Hi, im Nestor but you can call me ney ;)</h1>
-        
-    </div>
-    <div id="aboutR"></div>
-    <div id="about" data-aos="fade-left" data-aos-duration="1500">
-        <div id="line-1">
-            <div id="text">
-                <h2 id="title">I'm a gecko!</h2><br>
-                <h2 id="about-text">I am Nestor, I'm a programming student who loves application development, video games, art, and pizza (the most delicious food that exists). In general, I enjoy programming and developing small things, and enjoying life and what it offers us (like geckos). I'm a dreamer and at the same time someone who lives in the present. If you ever want to play Minecraft with me, just let me know, I'm a good and friendly person (although a little antisocial)</h2>
-            </div>
-            <div id="back">
-                <img src="img/gecko.jpg" alt="image created with stable diffusion">
-            </div>
-        </div>
-        <h2 id="contactButton" onclick="window.location = '#'">Contact me</h2>
-    </div>
-</body>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-
 <script type="text/javascript">
-    window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("abajo",window.scrollY>0);
-    })
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)) {
+           window.location = '/movil/';
+        } else {
+           window.location = '/computer/';
+        }
 </script>
