@@ -80,25 +80,30 @@ body{
     text-align: center;
     display: flex;
     justify-content: center;
-    height: calc(14vmin + 14vmax);
+    height: 40vh;
     
 }
 
 #message img{
-    margin-right: calc(1vmax + 1vmin);;
-    width: calc(6.5vmax + 6.5vmin);
-    height: calc(6.5vmax + 6.5vmin);
+    margin-right: 4%;
+    width: 14vw;
+    height: 14vw;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 120px;
+    max-height: 120px;
     background-color: #89D99C;
-    border-radius: calc(2.5vmax + 2.5vmin);
-    box-shadow: 5px 5px 15px -6px rgba(0,0,0,0.75);
+    border-radius: calc(1vw + 1vh);
+    padding: 5px;
+    box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
 }
 
 #message h1{
-    margin-top: calc(1.2vmax + 1.2vmin);
+    margin-top: calc(1.5vmax + 1.5vmin);
     font-size: calc(1.4vmax + 1.4vmin);
     padding-top: calc(1vmax + 1vmin);
     padding-bottom: calc(-1vmax + -1vmin);
-    box-shadow: 5px 5px 15px -6px rgba(0,0,0,0.75);
+    box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
     color: #0B2B40;
     background-color: #89D99C;
     height: calc(2.8vmax + 2.8vmin);
