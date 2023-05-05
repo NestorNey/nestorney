@@ -4,6 +4,14 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+@media only screen and (max-width: 800px) {
+    .logo {
+    }
+    header ul li a{
+        display:none;
+    }
+  }
+
 header{
     position: fixed;
     top: 0;
@@ -12,19 +20,18 @@ header{
     display: flex;
     justify-content: space-around;
     transition: 0.7s;
-    padding: calc(.4vmax + .4vmin) calc(.4vmax + .4vmin);
+    padding: 10px 10px;
     z-index: 10;
 }
 header.abajo{
-    background: black;
-
+    background: rgb(30, 30, 40);
 }
 
 header .logo{
     position: relative;
-    color: #d7ddff;
+    color: #89D99C;
     font-weight: bold;
-    font-size: calc(1vmax + 1vmin);
+    font-size: 22px;
     letter-spacing: 2px;
     transition: 1.5s;
     text-decoration: none;
@@ -48,10 +55,10 @@ header ul li{
 
 header ul li a{
     position: relative;
-    font-size: calc(.7vmax + .7vmin);
-    margin: calc(.6vmax + .6vmin);
+    font-size: 14px;
+    margin: 15px;
     text-decoration: none;
-    color: #d7ddff;
+    color: #89D99C;
     letter-spacing: 2px;
     font-weight: 600;
     transition: 0.7s;
@@ -59,17 +66,17 @@ header ul li a{
 
 header.abajo .logo,
 header.abajo ul li a{
-    color: #d7ddff;
+    color: #e8ecff;
 }
 
 
 body{
-    background-color: #1E1E1E ;
+    background-color: #e8ecff;
     height: 100vw;
 }
 
 #message{
-    margin-top: calc(12vmin + 12vmax);
+    margin-top: 40vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -103,7 +110,7 @@ body{
     margin-top: calc(6vmin + 6vmax);
     background-color: #89D99C;
     padding: calc(2vmax + 2vmin) calc(2vmax + 2vmin);
-    height: calc(18vmax + 18vmin);
+    height: calc(20vmax + 20vmin);
     margin-left: 4%;
     border-top-left-radius: calc(14vmin + 14vmax);
     border-bottom-left-radius: calc(5vmin + 5vmax);
@@ -115,13 +122,14 @@ body{
     display: flex;
     justify-content: center;
     margin-left: calc(5vmin + 5vmax);
+    margin-top: 3%;
 }
 
 #about #back{
     margin-right: calc(1vmax + 1vmin);
     width: calc(14vmax + 14vmin);
     height: calc(14vmax + 14vmin);
-    background-color: #d7ddff;
+    background-color: #e8ecff;
     border-radius: calc(6.5vmax + 6.5vmin);
     padding: calc(1vmax + 1vmin);
     margin-top: -1%;
@@ -131,7 +139,7 @@ body{
 #about img{
     width: calc(14vmax + 14vmin);
     height: calc(14vmax + 14vmin);
-    background-color: #d7ddff;
+    background-color: #e8ecff;
     border-radius: calc(6.5vmax + 6.5vmin);
 }
 
@@ -152,7 +160,7 @@ body{
     font-weight: 500;
     text-align: justify;
     color: #0B2B40;
-    font-family:arial;
+    font-family: 'Roboto';
     margin-top: calc(1vmax + .5vmin);
 }
 
@@ -160,12 +168,18 @@ body{
     text-align: center;
     padding-top: calc(.6vmax + .6vmin);
     padding-bottom: calc(.4vmax + .4vmin);
-    color: #d7ddff;
+    color: #e8ecff;
     background-color: #0B2B40;
     margin-left: calc(5vmin + 5vmax);
-    width: 10%;
-    height: 9%;
+    width: 9vw;
+    height: 5vh;
     font-size: calc(.9vmax + .9vmin);
     border-radius: calc(.5vmin + .5vmax);
     cursor: pointer;
+    box-shadow: -.2vw .2vw 0px 0px rgba(82, 82, 82);
+    transition: width .5s, height .5s;
+}
+#about #contactButton:hover{
+    width: 9.4vw;
+    height: 5.2vh;
 }
