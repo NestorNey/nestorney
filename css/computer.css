@@ -1,16 +1,29 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@media only screen and (max-width: 800px) {
-    .logo {
-    }
-    header ul li a{
+/*Styles for tablets and cell phones*/
+@media only screen and (max-width: 850px) {
+    #message img, header ul li a, #about{
         display:none;
     }
+    #message h1{
+        font-size: 15px;
+        height: 25px;
+        width: 320px;
+    }
   }
+
+/*Styles for computers*/
+@media only screen and (min-width: 850px) {
+    #message h1{
+        font-size: 25px;
+        height: 45px;
+        width: 550px;
+    }
+}
 
 header{
     position: fixed;
@@ -76,115 +89,240 @@ body{
 }
 
 #message{
-    margin-top: 40vh;
+    margin-top: 250px;
     text-align: center;
     display: flex;
     justify-content: center;
-    height: 40vh;
-    
+    height: 250px; 
 }
 
 #message img{
-    margin-right: 4%;
-    width: 14vw;
-    height: 14vw;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
     min-width: 40px;
     min-height: 40px;
     max-width: 120px;
     max-height: 120px;
     background-color: #89D99C;
-    border-radius: calc(1vw + 1vh);
+    border-radius: 25px;
     padding: 5px;
     box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
 }
 
 #message h1{
-    margin-top: calc(1.5vmax + 1.5vmin);
-    font-size: calc(1.4vmax + 1.4vmin);
-    padding-top: calc(1vmax + 1vmin);
-    padding-bottom: calc(-1vmax + -1vmin);
+    margin-top: 35px;
+    padding-top: 15px;
+    padding-bottom: 5px;
     box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
     color: #0B2B40;
     background-color: #89D99C;
-    height: calc(2.8vmax + 2.8vmin);
-    width: calc(30vmax + 30vmin);
-    border-radius: calc(1.5vmax + 1.5vmin) calc(1.5vmax + 1.5vmin) calc(1.5vmax + 1.5vmin) 0;
+    border-radius: 25px 25px 25px 0;
 }
 
 #about{
-    margin-top: calc(6vmin + 6vmax);
+    margin-top: 100px;
     background-color: #89D99C;
-    padding: calc(2vmax + 2vmin) calc(2vmax + 2vmin);
-    height: calc(20vmax + 20vmin);
-    margin-left: 4%;
-    border-top-left-radius: calc(14vmin + 14vmax);
-    border-bottom-left-radius: calc(5vmin + 5vmax);
+    padding: 20px 20px;
+    height: 30vw;
+    min-height: 350px;
+    margin-left: 100px;
+    border-top-left-radius: 280px;
+    border-bottom-left-radius: 120px;
     box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
 }
 
-#about #line-1{
+#about .line-1{
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-left: calc(5vmin + 5vmax);
-    margin-top: 3%;
+    margin-left: 100px;
+    margin-top: 30px;
 }
 
-#about #back{
-    margin-right: calc(1vmax + 1vmin);
-    width: calc(14vmax + 14vmin);
-    height: calc(14vmax + 14vmin);
+#about .back{
+    margin-right: 40px;
     background-color: #e8ecff;
-    border-radius: calc(6.5vmax + 6.5vmin);
-    padding: calc(1vmax + 1vmin);
-    margin-top: -1%;
-    margin-right: 0%;
+    border-radius: 110px;
+    padding: 20px;
+    margin-right: 0;
 }
 
 #about img{
-    width: calc(14vmax + 14vmin);
-    height: calc(14vmax + 14vmin);
+    width: calc(14vh + 14vw);
+    height: calc(14vh + 14vw);
     background-color: #e8ecff;
-    border-radius: calc(6.5vmax + 6.5vmin);
+    border-radius: 200px;
 }
 
-#about #text{
-    margin-right: calc(3.5vmax + 3.5vmin);
-    margin-top: calc(1vmax + 1vmin);
+#about .text{
+    margin-right: 50px;
+    margin-top: 30px;
 }
 
-#about #title{
-    font-size: calc(1.8vmax + 1.8vmin);
+#about .title{
+    font-size: calc(1.8vh + 1.8vw);
     text-align: left;
     color: #0B2B40;
     font-family:'Gill Sans MT';
 }
 
-#about #about-text{
-    font-size: calc(1vmax + 1vmin);
+#about .about-text{
+    font-size: 1.5vw;
     font-weight: 500;
     text-align: justify;
     color: #0B2B40;
     font-family: 'Roboto';
-    margin-top: calc(1vmax + .5vmin);
+    margin-top: 10px;
 }
 
-#about #contactButton{
+#about .contactButton{
     text-align: center;
-    padding-top: calc(.6vmax + .6vmin);
-    padding-bottom: calc(.4vmax + .4vmin);
+    padding: 10px 0px 2px 0px;
     color: #e8ecff;
     background-color: #0B2B40;
-    margin-left: calc(5vmin + 5vmax);
-    width: 9vw;
-    height: 5vh;
-    font-size: calc(.9vmax + .9vmin);
-    border-radius: calc(.5vmin + .5vmax);
+    margin-left: 100px;
+    width: 120px;
+    height: 32px;
+    font-size: 18px;
+    border-radius: 12px;
     cursor: pointer;
-    box-shadow: -.2vw .2vw 0px 0px rgba(82, 82, 82);
+    box-shadow: -3px 3px 0px 0px rgba(82, 82, 82);
     transition: width .5s, height .5s;
 }
-#about #contactButton:hover{
-    width: 9.4vw;
-    height: 5.2vh;
+#about .contactButton:hover{
+    width: 125px;
+    height: 34px;
 }
+
+#skills{
+    text-align: center;
+    margin-top: 10%;
+}
+
+#skills #stitle{
+    margin: auto;
+    width: 10%;
+    border-bottom: 3px solid #89D99C;
+    color:#0B2B40;
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.class{
+    animation: expandLine 2s .5s forwards;
+}
+
+@keyframes expandLine {
+    1% {
+      width: 10%
+    }
+  
+    100% {
+      width: 80%;
+    }
+}
+
+#skills .percentages{
+    padding: 30px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.leftside{
+    margin-right: 20%;
+}
+
+#skills .language{
+    font-size: 15px;
+    margin: 25px;
+}
+
+#skills .percentages .barra{
+    width: 300px;
+    background-color: #0B2B40;
+    height: 5px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.percent{
+    background-color: #89D99C;
+    height: 100%;
+}
+
+#js-percent{
+    width: 85%;
+}
+
+#php-percent{
+    width: 65%;
+}
+
+#laravel-percent{
+    width: 60%;
+}
+
+#java-percent, #c-percent{
+    width: 90%;
+}
+
+#html-percent, #sql-percent{
+    width: 70%;
+}
+
+#css-percent, #python-percent, #django-percent{
+    width: 75%;
+}
+
+#skills .targets{
+    display: flex;
+    justify-content: center;
+}
+
+.skills{
+    background-color: #0B2B40;
+    height: 400px;
+    width: 300px;
+    margin-bottom: 15%;
+    border-radius: 10px;
+    box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
+}
+
+.skills .title{
+    font-size: 25px;
+    color: #89D99C;
+}
+
+.skills .text{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: justify;
+    color: #cbcee0;
+    margin: 10%;
+}
+
+.skills img{
+    margin: 5%;
+    width: 70px;
+    height: 70px;
+}
+
+#special{
+    position: fixed;
+    top: 100;
+    left: 0;
+    z-index: 10;
+}
+
+/*SECCION 3---------------------*/
+#education {
+    text-align: center;
+    
+}
+
+#education nav{
+    display: inline;
+}
+
+
