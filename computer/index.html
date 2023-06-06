@@ -8,7 +8,7 @@
     <title>NestorNey</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="../css/computer.css" rel="stylesheet">
+    <link href="css/computer.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -20,15 +20,14 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="#aboutR">About</a></li>
 				<li><a href="#skillsR">Skills</a></li>
-                <li><a href="#">Education</a></li>
-				<li><a href="#">Services</a></li>
+                <li><a href="#educationR">Education</a></li>
 				<li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
     <div id="message" data-aos="fade-down" data-aos-duration="1500">
-        <img src="../img/a.png">
+        <img src="img/a.png">
         <h1>Hi, im Nestor but you can call me ney ;)</h1>
     </div>
     <div id="aboutR" style="visibility: hidden;"></div>
@@ -39,14 +38,14 @@
                 <h2 class="about-text">I am Nestor, I'm a programming student who loves application development, video games, art, and pizza (the most delicious food that exists). In general, I enjoy programming and developing small things, and enjoying life and what it offers us (like geckos). I'm a dreamer and at the same time someone who lives in the present. If you ever want to play Minecraft with me, just let me know, I'm a good and friendly person (although a little antisocial)</h2>
             </div>
             <div class="back">
-                <img src="../img/gecko.jpg" alt="image created with stable diffusion">
+                <img src="img/gecko.jpg" alt="image created with stable diffusion">
             </div>
         </div>
         <h2 class="contactButton" onclick="window.location = '#'">Contact me</h2>
     </div>
     <div id="skillsR" style="visibility: hidden;"></div>
-    <div id="skills" data-aos="fade-down" data-aos-duration="1500">
-        <h2 id="stitle" >Skills</h2>
+    <div id="skills" data-aos="fade-down" data-aos-duration="1400">
+        <h2 class="titles" id="stitle" >Skills</h2>
         <div class="percentages">
             <div class="leftside">
             <div class="language"><h3>JAVASCRIPT &nbsp;&nbsp;-&nbsp;&nbsp; 85%</h3><div class="barra"><div class="percent" id="js-percent"></div></div></div>
@@ -67,7 +66,7 @@
         <div class="targets">
             <div class="leftside">
             <div class="skills">
-                <img src="../img/backdev.png">
+                <img src="img/backdev.png">
                 <h2 class="title">Backend developer</h2>
                 <h3 class="text">Data analysis, server management, and creating scalable 
                     and secure systems are some of my skills. I have expertise in programming 
@@ -75,7 +74,7 @@
                     for various backend problems</h3>
             </div>
             <div class="skills">
-                <img src="../img/frontdev.png">
+                <img src="img/frontdev.png">
                 <h2 class="title">Frontend developer</h2>
                 <h3 class="text">Skilled in creating responsive and intuitive user interfaces 
                     using technologies such as HTML, CSS, and JavaScript to develop attractive 
@@ -84,14 +83,14 @@
             </div>
             <div class="rightside">
             <div class="skills">
-                <img src="../img/teamwork.png">
+                <img src="img/teamwork.png">
                 <h2 class="title">Team work</h2>
                 <h3 class="text">I am capable of effectively collaborating with others to achieve 
                     common goals, aligning efforts and maintaining clear and effective communication 
                     to ensure project success</h3>
             </div>
             <div class="skills">
-                <img src="../img/learning.png">
+                <img src="img/learning.png">
                 <h2 class="title">Fast learning</h2>
                 <h3 class="text">If the project needs a solution different from my skills, I can be
                     persevering an get the project done as well as adaptation to any space and work 
@@ -100,31 +99,78 @@
             </div>
         </div>
     </div>
-    <div id="education">
-        <h2 id="etitle" >Education</h2>
+    <div id="educationR" style="visibility: hidden;"></div>
+    <div id="education" data-aos="fade-up" data-aos-duration="1400">
+        <h2 class="titles" id="etitle" >Education</h2>          
         <nav class="qualification">
+            <input class="checkboxSquareTray" id="cb-1" type="checkbox" target="in-1">
             <div class="squareTray">
-                <input class="checkboxSquareTray" id="cb-1" type="checkbox" target="in-1">
-                <label for="cb-1"><h2>politecnica 2018 2023</h2></label>
+                <label for="cb-1"><h2>Escuela Politecnica de Guadalajara</h2><img src="img/school.png"></label>
                 <div class="info" id="in-1">
-                    <h2>JAJAJA</h2>
+                    <h2>I'm currently studying computing systems technology where i'm learning
+                        all about the hadware and software about a pc, I'm learning thigns like
+                        a computer architecture, computer components, basic electronics, hardware
+                        in general, operative systems, software analysis and design and Database 
+                        Management Systems. 
+                    </h2>
+                    <div class="calendar"><img src="img/calendar.png"><h3>2020 - 2024 (Graduation date)</h3></div>
                 </div>
             </div>
+            <div class="backLine"></div>
+            <input class="checkboxSquareTray" id="cb-2" type="checkbox" target="in-2">
             <div class="squareTray">
-                <input class="checkboxSquareTray" id="cb-2" type="checkbox" target="in-2">
-                <label for="cb-2"><h2>cucei 2018 2023</h2></label>
+                <label for="cb-2"><h2>P-TECH - IBM Program</h2><img src="img/ibm.png" class="ibm"></label>
                 <div class="info" id="in-2">
-                    <h2>JEJEJE</h2>
+                    <h2>I'm currently part of a program called P-Tech in collaboration with IBM. In 
+                        a P-TECH program, young students obtain a high school completion certificate, 
+                        an industry-valued associate degree, and accumulate work experience in high-demand 
+                        fields and we are in the branch of application development where we learn that.
+                    </h2>
+                    <div class="calendar"><img src="img/calendar.png"><h3>2020 - 2025 (Graduation date)</h3></div>
                 </div>
             </div>
+            <div class="backLine"></div>
+            <input class="checkboxSquareTray" id="cb-3" type="checkbox" target="in-3">
             <div class="squareTray">
-                <input class="checkboxSquareTray" id="cb-3" type="checkbox" target="in-3">
-                <label for="cb-3"><h2>ptech 2018 2023</h2></label>
+                <label for="cb-3"><h2>Partner: PCAP - Programming Essentials in Python</h2><img src="img/python.png"></label>
                 <div class="info" id="in-3">
-                    <h2>JIJIJI</h2>
+                    <h2>I registered for a Python course that provided me with a strong foundation in Python's 
+                        basic syntax and crucial principles, enabling me to develop basic games and a user 
+                        interface with Pillow using the Python IDLE. This course was included in the Cisco Academy 
+                        program called Netacad, and it was one of the building blocks of the P-Tech program, which 
+                        I am currently part of.
+                    </h2>
+                    <div class="calendar"><img src="img/calendar.png"><h3>2021 - 2021</h3></div>
+                </div>
+            </div>
+            <div class="backLine"></div>
+            <input class="checkboxSquareTray" id="cb-4" type="checkbox" target="in-4">
+            <div class="squareTray" for="cb-4">
+                <label for="cb-4"><h2>CCNAv7: Introduction to Networks</h2><img src="img/networking.png"></label>
+                <div class="info" id="in-4">
+                    <h2>During my studies of a Cisco networking course, I acquired theoretical and practical skills to 
+                        design, install, operate, and maintain networks in various environments, including small-to-medium 
+                        businesses, enterprise, and service providers. Furthermore, I gained proficiency in using Cisco's 
+                        operating system and the Packet Tracer simulator to simulate network scenarios.
+                    </h2>
+                    <div class="calendar"><img src="img/calendar.png"><h3>2022 - 2022</h3></div>
                 </div>
             </div>
         </nav>
+    </div>
+    <div id="portfolio">
+        <h2 id="ptitle">Portfolio</h2>
+        <div class="proyects">
+            <div class="left">
+                <img src="passwordmanager.png">
+            </div>
+            <div class="center">
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
     </div>
 </body>
 
@@ -134,11 +180,15 @@
 </script>
 
 <script type="text/javascript">
+    var titles = document.getElementsByClassName("titles");
 
     let callback = (entries, observer) => {
         entries.forEach((entry) => {
             if(entry.isIntersecting){
-                document.getElementById("stitle").classList.add("class");
+                for(var i = 0; i<titles.length; i++){
+                    
+                }
+                entry.target.classList.add("class");
             }
         });
     };
@@ -147,9 +197,11 @@
         rootMargin: "0px",
         threshold: 1.0,
     };
-    let observer = new IntersectionObserver(callback, options);
-    let target = document.getElementById("stitle");
-    observer.observe(target);
+
+    for (let i = 0; i < titles.length; i++) {
+        let observer = new IntersectionObserver(callback, options);
+        observer.observe(titles[i]);
+    }
     
     window.addEventListener("scroll", function(){
         var header = document.querySelector("header");
@@ -159,22 +211,29 @@
     var squareChecks = document.getElementsByClassName("checkboxSquareTray");
     var squareTarget;
 
+
     for(var i = 0; i<squareChecks.length; i++){
-       
-        squareChecks.item(i).addEventListener('changue', e => {
-            console.log("xd?");
+        squareTarget = squareChecks.item(i).getAttribute("target");   
+        document.getElementById(squareTarget).style.display = "none";
+        squareChecks.item(i).addEventListener('change', e => {
+            
             if(e.target.checked == true){
-                squareTarget = e.target.getAttribute("target");
-                
+                squareTarget = e.target.getAttribute("target");   
                 document.getElementById(squareTarget).style.display = "block";
                 for(var i = 0; i<squareChecks.length; i++){
                     if(squareChecks.item(i) != e.target){
-                        squareTarget = e.target.getAttribute("target");
-                        document.getElementById(squareTarget).style.display = "block";
+                        squareTarget = squareChecks.item(i).getAttribute("target");
+                        squareChecks.item(i).checked = false;
+                        document.getElementById(squareTarget).style.display = 'none';
+                        
                     }
                 }
+            }else{
+                squareTarget = e.target.getAttribute("target");   
+                document.getElementById(squareTarget).style.display = "none";
             }
         });
+        
     }
 
 </script>
