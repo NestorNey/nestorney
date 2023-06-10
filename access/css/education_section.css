@@ -1,0 +1,105 @@
+/*------------------ Education ------------------*/
+@media (max-width: 756px) {
+    #education .backLine{
+        display: none;
+    }
+    #education .squareTray{
+        width: 100%;
+    }
+    #education label{
+        height: 28px;
+    }
+    :root{
+        --infoBox-height: 295px
+    }
+}
+@media (min-width: 756px) {
+    #education .squareTray{
+        width: 510px;
+        border-radius: 10px;
+    }
+    :root{
+        --infoBox-height: 250px
+    }
+}
+#education {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #e8ecff 50%, #e8ecff);
+}
+
+#education .educationBox {
+    align-self: center;
+    width: 100%;
+}
+
+#education #etitle{
+    margin-bottom: 50px;
+}
+
+#education nav{
+    display: inline;
+}
+
+#education .squareTray{
+    background-color: #0B2B40;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    color: #cbcee0;
+    box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
+    transition: height .2s;
+    overflow: hidden;
+}
+
+#education .squareTray:hover{
+    background-color: #071a27;
+}
+
+#education .checkboxSquareTray:checked + .squareTray{
+    height: var(--infoBox-height);
+    transition: height .2s;
+}
+
+#education label{
+    padding: 2%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+#education .info{
+    height: 100%;
+    background-color: #e8ecff;
+    color: #0B2B40;
+    padding: 20px;
+}
+
+#education .checkboxSquareTray{
+    display: none;
+}
+
+#education .calendar{
+    margin-top: 15px;
+    display: flex;
+}
+
+#education .calendar img{
+    height: 17px;
+    width: 17px;
+}
+
+#education .calendar h4{
+    color: #5c5c5c;
+}
+
+#education .backLine{
+    position: relative;
+    padding: 0;
+    margin: auto;
+    width: 4px;
+    height: 30px;
+    background-color: #8a8a8a;
+    z-index: -1;
+}

@@ -1,0 +1,108 @@
+/*------------------ Skills Section ------------------*/
+@media (max-width: 756px) {
+    #skills .percentages,
+    #skills .targets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills{
+        width: 100%;
+        height: fit-content;
+        padding: 5px 0 5px 0;
+    }
+
+}
+@media (min-width: 756px) {
+    #skills .percentages,
+    #skills .targets {
+        display: flex;
+    }
+    .skills{
+        height: 400px;
+        width: 350px;
+        border-radius: 10px;
+    }
+}
+
+#skills{
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#skills .percentages{
+    justify-content: space-around;
+}
+
+#skills .language{
+    margin: 50px 0 20px 0;
+}
+
+#skills .language h4{
+    margin-left: 5px;
+}
+
+#skills .targets{
+    justify-content: space-around;
+}
+
+#skills .skills{
+    background-color: #0B2B40;
+    margin-top: 15%;
+    box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
+}
+
+#skills .skills .title{
+    color: #89D99C;
+}
+
+#skills .skills .text{
+    color: #cbcee0;
+    margin: 10%;
+}
+
+#skills .skills img{
+    margin: 5%;
+    width: 70px;
+    height: 70px;
+}
+
+#skills .percentages .barra{
+    width: 250px;
+    background-color: #0B2B40;
+    height: 6px;
+    margin: auto;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+
+#skills .percent{
+    background-color: #89D99C;
+    height: 100%;
+    border-radius: 2px;
+}
+/*--------------------------------------------------------*/
+#js-percent{
+    width: 85%;
+}
+
+#php-percent{
+    width: 65%;
+}
+
+#laravel-percent{
+    width: 60%;
+}
+
+#java-percent, #c-percent{
+    width: 90%;
+}
+
+#html-percent, #sql-percent{
+    width: 70%;
+}
+
+#css-percent, #python-percent, #django-percent{
+    width: 75%;
+}

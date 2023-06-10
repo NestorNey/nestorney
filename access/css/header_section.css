@@ -1,0 +1,142 @@
+/*------------------ Header ------------------*/
+@media (max-width: 756px){
+    header {
+        flex-wrap: wrap;
+    }
+    header .logo {
+        order: 1;
+        height: 25px;
+    }
+    header.opened{
+        height: 100%;
+    }
+    nav {
+        order: 3;
+        width: 100%;
+        margin-top: 10px;
+        align-self:flex-start;
+    }
+    .menu {
+        order: 2;
+        height: 25px;
+    }
+
+    #fin{
+        order: 4;
+        margin-bottom: 5%;
+    }
+
+    header ul li {
+        padding: 10px 0 10px;
+        display: flex;
+    }
+    :root{
+        --header-padding: 10px 0;
+        --ul-display: inline;
+        --menuIcons--display: block;
+        --secButton-fontSize: 18px;
+        --secButton-margin: 5px;
+        --fin-display: initial;
+    }
+}
+  
+@media (min-width: 756px){
+    header{
+        align-items: center;
+    }
+    header .menu {
+        display: none;
+    }
+    :root{
+        --header-padding: 10px 0 10px;
+        --ul-display:flex;
+        --menuIcons--display: none;
+        --secButton-fontSize: 14px;
+        --secButton-margin: 15px;
+        --fin-display: none;
+    }
+}
+  
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    padding: var(--header-padding);
+    justify-content: space-around;
+    background-color: transparent;
+    transition: background-color 0.7s, height 0.7s;
+    z-index: 10;
+    
+    overflow: hidden;
+}
+
+header.abajo {
+    background-color: rgb(30, 30, 40);
+}
+  
+header .logo {
+    color: #89D99C;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 2px;
+    transition: color 1.5s;
+    text-decoration: none;
+}
+
+  
+header ul {
+    display: var(--ul-display);
+}
+  
+header ul li {
+    list-style: none;
+}
+  
+header ul li a {
+    text-decoration: none;
+    margin: var(--secButton-margin);
+    font-size: var(--secButton-fontSize);
+    color: #89D99C;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: color 0.7s;
+}
+
+header ul li a:hover{
+    color: #0B2B40;
+}
+header.abajo ul li a:hover{
+    color: #89D99C;
+}
+  
+.menu {
+    width: 22px;
+    height: 22px;
+    transition: 0.7s;
+}
+
+header .menuIcons{
+    display: var(--menuIcons--display);
+    width: 28px;
+    height: 28px;
+    padding: 0 10px 0 15px;
+}
+
+#fin{
+    display: var(--fin-display);
+    width: 50px;
+    height: 50px;
+}
+  
+header.abajo .logo,
+header.abajo ul li a,
+header.abajo .menu {
+    color: #e8ecff;
+}
+  
+header.abajo .menu {
+    filter: brightness(0) invert(.9);
+}

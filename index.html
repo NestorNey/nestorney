@@ -5,337 +5,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>NestorNey</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="css/computer.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="access/css/main_style.css">
+    <link rel="stylesheet" href="access/css/header_section.css">
+    <link rel="stylesheet" href="access/css/welcome_section.css">
+    <link rel="stylesheet" href="access/css/about_section.css">
+    <link rel="stylesheet" href="access/css/skills_section.css">
+    <link rel="stylesheet" href="access/css/education_section.css">
+    <link rel="stylesheet" href="access/css/portfolio_section.css">
+    <link rel="stylesheet" href="access/css/contact_section.css">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-		<a href="#" class="logo">NestorNey</a>
-		<nav>
+		<a href="#" id="logo" class="logo">NestorNey</a>
+		<nav id="menu" state="closed">
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#aboutR">About</a></li>
-				<li><a href="#skillsR">Skills</a></li>
-                <li><a href="#educationR">Education</a></li>
-				<li><a href="#portfolioR">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+				<li><img class="menuIcons" src="access/media/icons/home.png"><a href="#">Home</a></li>
+				<li id="asd"><img class="menuIcons" src="access/media/icons/about.png">
+                    <a href="#about">About</a>
+                </li>
+				<li><img class="menuIcons" src="access/media/icons/skills.png"><a href="#skills">Skills</a></li>
+                <li><img class="menuIcons" src="access/media/icons/education.png"><a href="#education">Education</a></li>
+				<li><img class="menuIcons" src="access/media/icons/portfolio.png"><a href="#portfolio">Portfolio</a></li>
+                <li><img class="menuIcons" src="access/media/icons/contact.png"><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
+        <img id="menuButton" class="menu" src="access/media/icons/menu.png">
 	</header>
-    <div id="message" data-aos="fade-down" data-aos-duration="1500">
-        <img src="img/a.png">
+    <section id="message" data-aos="fade-down" data-aos-duration="1500">
+        <img src="access/media/images/gecko_1.png">
         <h1>Hi, im Nestor but you can call me ney ;)</h1>
-    </div>
-    <div id="aboutR" style="visibility: hidden;"></div>
-    <div id="about" data-aos="fade-left" data-aos-duration="1500">
-        <div class="line-1">
-            <div class="text">
-                <h2 class="title">I'm a gecko!</h2><br>
-                <h2 class="about-text">I am Nestor, I'm a programming student who loves application development, video games, art, and pizza (the most delicious food that exists). In general, I enjoy programming and developing small things, and enjoying life and what it offers us (like geckos). I'm a dreamer and at the same time someone who lives in the present. If you ever want to play Minecraft with me, just let me know, I'm a good and friendly person (although a little antisocial)</h2>
+    </section>
+    <section id="about">
+        <div class="aboutBox" data-aos="fade-left" data-aos-duration="1400">
+            <div class="subBox">
+                <div class="text">
+                    <h3 class="title">I'm a gecko!</h3>
+                    <h4 class="about-text">I am Nestor, I'm a programming student who loves application development, video games, art, and pizza (the most delicious food that exists). In general, I enjoy programming and developing small things, and enjoying life and what it offers us (like geckos). I'm a dreamer and at the same time someone who lives in the present. If you ever want to play Minecraft with me, just let me know, I'm a good and friendly person (although a little antisocial)</h4>
+                    <h4 class="contactButton" onclick="window.location = '#contact'">Contact me</h4>
+                </div>
+                <img src="access/media/images/gecko_2.jpg" alt="image created with stable diffusion">
             </div>
-            <div class="back">
-                <img src="img/gecko.jpg" alt="image created with stable diffusion">
-            </div>
-        </div>
-        <h2 class="contactButton" onclick="window.location = '#'">Contact me</h2>
-    </div>
-    <div id="skillsR" style="visibility: hidden;"></div>
-    <div id="skills" data-aos="fade-down" data-aos-duration="1400">
-        <h2 class="titles" id="stitle" >Skills</h2>
+        </div> 
+    </section>
+    <section id="skills">
+        <h2 class="titles">Skills</h2>
         <div class="percentages">
-            <div class="leftside">
-            <div class="language"><h3>JAVASCRIPT &nbsp;&nbsp;-&nbsp;&nbsp; 85%</h3><div class="barra"><div class="percent" id="js-percent"></div></div></div>
-            <!--====== i understand html and css isn't a programming language >:c =======-->
-            <div class="language"><h3>HTML &nbsp;&nbsp;-&nbsp;&nbsp; 70%</h3><div class="barra"><div class="percent" id="html-percent"></div></div></div>
-            <div class="language"><h3>CSS &nbsp;&nbsp;-&nbsp;&nbsp; 75%</h3><div class="barra"><div class="percent" id="css-percent"></div></div></div>
-            <div class="language"><h3>PHP &nbsp;&nbsp;-&nbsp;&nbsp; 65%</h3><div class="barra"><div class="percent" id="php-percent"></div></div></div>
-            <div class="language"><h3>PYTHON &nbsp;&nbsp;-&nbsp;&nbsp; 75%</h3><div class="barra"><div class="percent" id="python-percent"></div></div></div>
+            <div id="leftside" class="side" data-aos="fade-right" data-aos-duration="1400">
+            <div class="language"><h4>JAVASCRIPT &nbsp;&nbsp;-&nbsp;&nbsp; 85%</h4><div class="barra"><div class="percent" id="js-percent"></div></div></div>
+            <!--/====== i understand html and css isn't a programming language >:c =======/-->
+            <div class="language"><h4>HTML &nbsp;&nbsp;-&nbsp;&nbsp; 70%</h4><div class="barra"><div class="percent" id="html-percent"></div></div></div>
+            <div class="language"><h4>CSS &nbsp;&nbsp;-&nbsp;&nbsp; 75%</h4><div class="barra"><div class="percent" id="css-percent"></div></div></div>
+            <div class="language"><h4>PHP &nbsp;&nbsp;-&nbsp;&nbsp; 65%</h4><div class="barra"><div class="percent" id="php-percent"></div></div></div>
+            <div class="language"><h4>PYTHON &nbsp;&nbsp;-&nbsp;&nbsp; 75%</h4><div class="barra"><div class="percent" id="python-percent"></div></div></div>
             </div>
-            <div class="rightside">
-            <div class="language"><h3>JAVA &nbsp;&nbsp;-&nbsp;&nbsp; 90%</h3><div class="barra"><div class="percent" id="java-percent"></div></div></div>
-            <div class="language"><h3>C &nbsp;&nbsp;-&nbsp;&nbsp; 90%</h3><div class="barra"><div class="percent" id="c-percent"></div></div></div>
-            <div class="language"><h3>SQL &nbsp;&nbsp;-&nbsp;&nbsp; 70%</h3><div class="barra"><div class="percent" id="sql-percent"></div></div></div>
-            <div class="language"><h3>DJANGO &nbsp;&nbsp;-&nbsp;&nbsp; 75%</h3><div class="barra"><div class="percent" id="django-percent"></div></div></div>
-            <div class="language"><h3>LARAVEL &nbsp;&nbsp;-&nbsp;&nbsp; 60%</h3><div class="barra"><div class="percent" id="laravel-percent"></div></div></div>
+            <div id="rightside" class="side" data-aos="fade-left" data-aos-duration="1400">
+            <div class="language"><h4>JAVA &nbsp;&nbsp;-&nbsp;&nbsp; 90%</h4><div class="barra"><div class="percent" id="java-percent"></div></div></div>
+            <div class="language"><h4>C &nbsp;&nbsp;-&nbsp;&nbsp; 90%</h4><div class="barra"><div class="percent" id="c-percent"></div></div></div>
+            <div class="language"><h4>SQL &nbsp;&nbsp;-&nbsp;&nbsp; 70%</h4><div class="barra"><div class="percent" id="sql-percent"></div></div></div>
+            <div class="language"><h4>DJANGO &nbsp;&nbsp;-&nbsp;&nbsp; 75%</h4><div class="barra"><div class="percent" id="django-percent"></div></div></div>
+            <div class="language"><h4>LARAVEL &nbsp;&nbsp;-&nbsp;&nbsp; 60%</h4><div class="barra"><div class="percent" id="laravel-percent"></div></div></div>
             </div>
         </div>
         <div class="targets">
-            <div class="leftside">
-            <div class="skills">
-                <img src="img/backdev.png">
-                <h2 class="title">Backend developer</h2>
-                <h3 class="text">Data analysis, server management, and creating scalable 
+            <div class="leftside" >
+            <div class="skills" data-aos="fade-up" data-aos-duration="1400">
+                <img src="access/media/icons/backdev.png">
+                <h3 class="title">Backend developer</h3>
+                <h4 class="text">Data analysis, server management, and creating scalable 
                     and secure systems are some of my skills. I have expertise in programming 
                     languages like Python and Java, enabling me to develop quality solutions 
-                    for various backend problems</h3>
+                    for various backend problems</h4>
             </div>
-            <div class="skills">
-                <img src="img/frontdev.png">
-                <h2 class="title">Frontend developer</h2>
-                <h3 class="text">Skilled in creating responsive and intuitive user interfaces 
+            <div class="skills" data-aos="fade-up" data-aos-duration="1400">
+                <img src="access/media/icons/frontdev.png">
+                <h3 class="title">Frontend developer</h3>
+                <h4 class="text">Skilled in creating responsive and intuitive user interfaces 
                     using technologies such as HTML, CSS, and JavaScript to develop attractive 
-                    and efficient solutions for users</h3>
+                    and efficient solutions for users</h4>
             </div>
             </div>
             <div class="rightside">
-            <div class="skills">
-                <img src="img/teamwork.png">
-                <h2 class="title">Team work</h2>
-                <h3 class="text">I am capable of effectively collaborating with others to achieve 
+            <div class="skills" data-aos="fade-up" data-aos-duration="1400">
+                <img src="access/media/icons/teamwork.png">
+                <h3 class="title">Team work</h3>
+                <h4 class="text">I am capable of effectively collaborating with others to achieve 
                     common goals, aligning efforts and maintaining clear and effective communication 
-                    to ensure project success</h3>
+                    to ensure project success</h4>
             </div>
-            <div class="skills">
-                <img src="img/learning.png">
-                <h2 class="title">Fast learning</h2>
-                <h3 class="text">If the project needs a solution different from my skills, I can be
+            <div class="skills" data-aos="fade-up" data-aos-duration="1400">
+                <img src="access/media/icons/learning.png">
+                <h3 class="title">Fast learning</h3>
+                <h4 class="text">If the project needs a solution different from my skills, I can be
                     persevering an get the project done as well as adaptation to any space and work 
-                    environment</h3>
+                    environment</h4>
             </div>
             </div>
         </div>
-    </div>
-    <div id="educationR" style="visibility: hidden;"></div>
-    <div id="education" data-aos="fade-up" data-aos-duration="1400">
+    </section>
+    <section id="education">
+        <div class="educationBox">
         <h2 class="titles" id="etitle" >Education</h2>          
         <nav class="qualification">
             <input class="checkboxSquareTray" id="cb-1" type="checkbox" target="in-1">
             <div class="squareTray">
-                <label for="cb-1"><h2>Escuela Politecnica de Guadalajara</h2><img src="img/school.png"></label>
+                <label for="cb-1"><h3 class="h3_subtype">High school</h3></label>
                 <div class="info" id="in-1">
-                    <h2>I'm currently studying computing systems technology where i'm learning
+                    <h4 class="h4_subtype">Escuela Politecnica de Guadalajara</h4><br>
+                    <h4 class="h4_subtype">I'm currently studying computing systems technology where i'm learning
                         all about the hadware and software about a pc, I'm learning thigns like
                         a computer architecture, computer components, basic electronics, hardware
                         in general, operative systems, software analysis and design and Database 
                         Management Systems. 
-                    </h2>
-                    <div class="calendar"><img src="img/calendar.png"><h3>2020 - 2024 (Graduation date)</h3></div>
+                    </h4>
+                    <div class="calendar"><img src="access/media/icons/calendar.png"><h4 class="h4_subtype">2020 - 2024 (Graduation date)</h4></div>
                 </div>
             </div>
             <div class="backLine"></div>
             <input class="checkboxSquareTray" id="cb-2" type="checkbox" target="in-2">
             <div class="squareTray">
-                <label for="cb-2"><h2>P-TECH - IBM Program</h2><img src="img/ibm.png" class="ibm"></label>
+                <label for="cb-2"><h3 class="h3_subtype">P-TECH</h3></label>
                 <div class="info" id="in-2">
-                    <h2>I'm currently part of a program called P-Tech in collaboration with IBM. In 
+                    <h4 class="h4_subtype">P-TECH - IBM Program</h4><br>
+                    <h4 class="h4_subtype">I'm currently part of a program called P-Tech in collaboration with IBM. In 
                         a P-TECH program, young students obtain a high school completion certificate, 
                         an industry-valued associate degree, and accumulate work experience in high-demand 
                         fields and we are in the branch of application development where we learn that.
-                    </h2>
-                    <div class="calendar"><img src="img/calendar.png"><h3>2020 - 2025 (Graduation date)</h3></div>
+                    </h4>
+                    <div class="calendar"><img src="access/media/icons/calendar.png"><h4 class="h4_subtype">2020 - 2025 (Graduation date)</h4></div>
                 </div>
             </div>
             <div class="backLine"></div>
             <input class="checkboxSquareTray" id="cb-3" type="checkbox" target="in-3">
             <div class="squareTray">
-                <label for="cb-3"><h2>Partner: PCAP - Programming Essentials in Python</h2><img src="img/python.png"></label>
+                <label for="cb-3"><h3 class="h3_subtype">PCAP-Essentials</h3></label>
                 <div class="info" id="in-3">
-                    <h2>I registered for a Python course that provided me with a strong foundation in Python's 
+                    <h4 class="h4_subtype">PCAP - Programming Essentials in Python</h4><br>
+                    <h4 class="h4_subtype">I registered for a Python course that provided me with a strong foundation in Python's 
                         basic syntax and crucial principles, enabling me to develop basic games and a user 
                         interface with Pillow using the Python IDLE. This course was included in the Cisco Academy 
                         program called Netacad, and it was one of the building blocks of the P-Tech program, which 
                         I am currently part of.
-                    </h2>
-                    <div class="calendar"><img src="img/calendar.png"><h3>2021 - 2021</h3></div>
+                    </h4>
+                    <div class="calendar"><img src="access/media/icons/calendar.png"><h4 class="h4_subtype">2021 - 2021</h4></div>
                 </div>
             </div>
             <div class="backLine"></div>
             <input class="checkboxSquareTray" id="cb-4" type="checkbox" target="in-4">
             <div class="squareTray" for="cb-4">
-                <label for="cb-4"><h2>CCNAv7: Introduction to Networks</h2><img src="img/networking.png"></label>
+                <label for="cb-4"><h3 class="h3_subtype">CCNAv7</h3></label>
                 <div class="info" id="in-4">
-                    <h2>During my studies of a Cisco networking course, I acquired theoretical and practical skills to 
+                    <h4 class="h4_subtype">CCNAv7 - Introduction to Networks</h4><br>
+                    <h4 class="h4_subtype">During my studies of a Cisco networking course, I acquired theoretical and practical skills to 
                         design, install, operate, and maintain networks in various environments, including small-to-medium 
                         businesses, enterprise, and service providers. Furthermore, I gained proficiency in using Cisco's 
                         operating system and the Packet Tracer simulator to simulate network scenarios.
-                    </h2>
-                    <div class="calendar"><img src="img/calendar.png"><h3>2022 - 2022</h3></div>
+                    </h4>
+                    <div class="calendar"><img src="access/media/icons/calendar.png"><h4 class="h4_subtype">2022 - 2022</h4></div>
                 </div>
             </div>
         </nav>
-    </div>
-    <div id="portfolioR" style="visibility: hidden;"></div>
-    <h2 class="titles" id="ptitle">Portfolio</h2>
-    <div id="passwordmanager" class="portfolios">
-        <div class="textBox">
-            <h2>PasswordManager</h2>
-            <h3>That's a pc software that try to imit a password manager, you can 
-                add, delete and modify the credentials you save, the version in my GitHub
-                is only a EXAMPLE about the software.
-            </h3>
         </div>
-        <div class="imageBox">
-            <div class="device" id="laptop">
-                <div class = "laptop-top">
-                    <div class="border">
-                        <div class="camera"></div>
-                        <img class="screen" src="img/passwordmanager.gif">
-                    </div>
-                </div>
-                <div class = "laptop-bottom"></div>
-            </div>
-        </div>
-    </div>
-    <!--<div id="portfolio">
-        <div class="partleft">
-            <div class="proyects">
-                <div class="partition" id="left">
-                    <div class="blanck"></div>
-                    <img class="imgProj" src="img/passwordmanager.png" onmouseenter="showPortfolio(1)" onmouseleave="hiddePortfolio('laptop')">
-                    <h3>Password Manager</h3>
-                </div>
-                <div class="line" id="lineLeft"></div>
-                <div class="partition" id="center">
-                    <img class="imgProj" src="img/mathle.png" onmouseenter="showPortfolio(2)" onmouseleave="hiddePortfolio('computer')">
-                    <h3>MathLe</h3>
-                    <div class="blanck"></div>
-                </div>
-                <div class="line" id="lineRight"></div>
-                <div class="partition" id="right">
-                    <div class="blanck"></div>
-                    <img class="imgProj" id="xd" src="img/gecko.jpg">
-                    <h3>GitHub</h3>
-                </div>
-            </div>
-        </div>
-        <div class="partright" id="passwordmanager">
+    </section>
+    <section id="portfolio">
+        <div id="passwordmanager" class="portfolio">
             <div class="text">
-                <h2>That's a project I created to save your credentials 
-                    and manage them in a better way. Although the BASE 
-                    version ISN'T SECURE (because it saves the data in a 
-                    ".txt" document) the software is in development, and 
-                    in future versions, we'll be adding a database and more 
-                    sophisticated security measures to protect your credentials.
-                </h2>
+                <h3>
+                    PasswordManager
+                </h3>
+                <h4>
+                    Thats a project that form part of a serie of prohects that i will doing in the school. Especially that project are made like a school project but it is being developed as a larger project with a database and security when entering credentials, this project remains as a base of what was, is or will be PasswordManager.
+                </h4>
+                <h4 class="vmButton" onclick="window.location = 'https://github.com/NestorNey/passwordmanager_java'">Ver mas</button>
             </div>
-            <div class="device" id="laptop">
-                <div class = "laptop-top">
-                    <div class="border">
-                        <div class="camera"></div>
-                        <img class="screen" src="">
-                    </div>
-                </div>
-                <div class = "laptop-bottom"></div>
+            <div class="imgBox">
+                <img src="access/media/images/pm.png">
             </div>
         </div>
-        <div class="partright" id="mathle">
+        <div id="myroute" class="portfolio">
+            <div class="text_phone">
+                <h3>
+                    MyRoute
+                </h3>
+                <h4>
+                    MyRoute is a mobile application developed in Android with Kotlin that provides a simple and useful solution for navigating through the city of Guadalajara. The application allows users to access detailed information about bus and train routes, including waypoints and all the stops along the routes.
+                </h4>
+                <h4 class="vmButton" onclick="window.location = 'https://github.com/Nesdriel/MyRoute'">Ver mas</button>
+            </div>
+            <div class="imgBox_phone">
+                <img src="access/media/images/mr_1.jpeg">
+                <img src="access/media/images/mr_2.jpeg">
+            </div>
+        </div>
+        <div id="mathle" class="portfolio">
             <div class="text">
-                <h2>That's a project I created to save your credentials 
-                    and manage them in a better way. Although the BASE 
-                    version ISN'T SECURE (because it saves the data in a 
-                    ".txt" document) the software is in development, and 
-                    in future versions, we'll be adding a database and more 
-                    sophisticated security measures to protect your credentials.
-                </h2>
+                <h3>
+                    MathLe
+                </h3>
+                <h4>
+                    Mathle is a website developed by a team that is part of IBM's P-Tech program. The project aims to find a solution to the problem of the poor way in which students learn mathematics. The project is under development and is not yet deployed.
+                </h4>
+                <h4 class="vmButton" onclick="window.location = 'https://github.com/Nesdriel/MathLe'">Ver mas</button>
             </div>
-            <div class="device" id="computer">
-                <div class="computer-monitor">
-                    <img class="screen" src="">
-                </div>
-                <div class="computer-bottom"></div>
-                <div class="computer-stand"></div>
-                <div class="computer-stand-bottom"></div>
+            <div class="imgBox">
+                <img src="access/media/images/ml.png">
             </div>
         </div>
-    </div>-->
+    </section>
+    <section id="contact">
+        <h2 class="titles">Contact me</h2>
+        <div class="contactBox">
+            <img class="photo" src="access/media/images/gecko_2.jpg">
+            <div class="github" onclick="window.location = 'https://github.com/NestorNey'"><img src="access/media/icons/github.png"><h3 class="h3_subtype">GitHub</h3></div>
+            <div class="gmail" onclick="composeEmail()"><img src="access/media/icons/gmail.png"><h3 class="h3_subtype">Gmail</h3></div>
+        </div>
+    </section>
 </body>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
+<script src="access/js/main.js"></script>
 
-<script type="text/javascript">
-    var titles = document.getElementsByClassName("titles");
-
-    let callback = (entries, observer) => {
-        entries.forEach((entry) => {
-            if(entry.isIntersecting){
-                entry.target.classList.add("class");
-            }
-        });
-    };
-    let options = {
-        root: document.getElementById("body"),
-        rootMargin: "0px",
-        threshold: 1.0,
-    };
-
-    for (let i = 0; i < titles.length; i++) {
-        let observer = new IntersectionObserver(callback, options);
-        observer.observe(titles[i]);
-    }
-    
-    window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("abajo",window.scrollY>0);
-    })
-
-    var squareChecks = document.getElementsByClassName("checkboxSquareTray");
-    var squareTarget;
-
-
-    for(var i = 0; i<squareChecks.length; i++){
-        squareTarget = squareChecks.item(i).getAttribute("target");   
-        document.getElementById(squareTarget).style.display = "none";
-        squareChecks.item(i).addEventListener('change', e => {
-            
-            if(e.target.checked == true){
-                squareTarget = e.target.getAttribute("target");   
-                document.getElementById(squareTarget).style.display = "block";
-                for(var i = 0; i<squareChecks.length; i++){
-                    if(squareChecks.item(i) != e.target){
-                        squareTarget = squareChecks.item(i).getAttribute("target");
-                        squareChecks.item(i).checked = false;
-                        document.getElementById(squareTarget).style.display = 'none';
-                        
-                    }
-                }
-            }else{
-                squareTarget = e.target.getAttribute("target");   
-                document.getElementById(squareTarget).style.display = "none";
-            }
-        });
-        
-    }
-
-    var sp_timeout;
-    var portfolios = document.getElementsByClassName("partright");
-    var screens = document.getElementsByClassName("screen");
-    var devices = document.getElementById("device");
-    
-    function showPortfolio(type){
-        switch(type){
-            case 1:
-                document.getElementById("passwordmanager").style.display= "block";
-                screens.item(type-1).src = "img/passwordmanager.gif";
-                sp_timeout = setTimeout(() => {
-                    document.getElementById("laptop").style.transform = "translate(0%, 0%)";
-                    document.getElementById("laptop").style.animation = "resize 2s 1s forwards";
-                }, 3000);
-                break;
-            case 2:
-                document.getElementById("mathle").style.display= "block";
-                screens.item(type-1).src = "img/passwordmanager.gif";
-                sp_timeout = setTimeout(() => {
-                    document.getElementById("computer").style.transform = "translate(0%, 0%)";
-                    document.getElementById("computer").style.animation = "resize 2s 1s forwards";
-                }, 3000);
-                break;
-        }
-    }
-
-    function hiddePortfolio(device){
-        clearTimeout(sp_timeout);
-        document.getElementById(device).style.transform = "translate(-150%, 0%)";
-        document.getElementById(device).style.animation = "appear 2s forwards";
-        for(var i = 0; i<portfolios.length;i++){
-            portfolios.item(i).style.display = "none";
-            screens.item(i).src = "";
-        }
-    }
-</script>
+<script>AOS.init()</script>

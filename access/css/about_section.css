@@ -1,0 +1,104 @@
+/*------------------ About Section ------------------*/
+@media (max-width: 756px) {
+    #about {
+        height: fit-content;
+        padding-bottom: 10%;
+    }
+    #about img{
+        width: 120px;
+        height: 120px;
+    }
+    #about .subBox {
+        flex-direction: column-reverse;
+        margin: 2% 0 2% 0;
+    }
+    #about .aboutBox {
+        width: 100%;
+    }
+    #about img {
+        order: 2;
+    }
+    #about .text {
+        order: 1;
+        margin-top: 5%;
+    }
+    #about .title {
+        text-align: center;
+    }
+    #about .contactButton{
+        margin: auto;
+    }
+}
+@media (min-width: 756px) {
+    #about img{
+        width: 240px;
+        height: 240px;
+    }
+    #about{
+        height: 100vh;
+    }
+    #about .subBox{
+        margin: 2% 0 0 10%;
+    }
+    #about .aboutBox {
+        width: 80%;
+        border-radius: 160px 0 0 120px;
+    }
+}
+#about {
+    display: flex;
+    justify-content: right;
+}
+  
+#about .aboutBox {
+    padding: 20px;
+    height: fit-content;
+    background-color: #89D99C;
+    box-shadow: -5px 6px 15px -6px rgba(0, 0, 0, 0.75);
+    align-self: center;
+}
+  
+#about .subBox {
+    text-align: center;
+    display: flex;
+    align-items: middle;
+}
+  
+#about img {
+    background-color: #e8ecff;
+    border-radius: 200px;
+    padding: 20px;
+    align-self: center;
+}
+  
+#about .text {
+    align-self: center;
+    margin-right: 5%;
+}
+  
+#about .title {
+    text-align: left;
+    color: #0B2B40;
+}
+  
+#about .about-text {
+    color: #0B2B40;
+    margin: 10px 0 25px 0;
+}
+  
+#about .contactButton {
+    text-align: center;
+    color: #e8ecff;
+    background-color: #0B2B40;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: -3px 3px 0px 0px rgba(82, 82, 82);
+    transition: padding .5s;
+}
+  
+#about .contactButton:hover {
+    padding: 14px;
+}
+  

@@ -1,0 +1,93 @@
+/*------------------ Contact ------------------*/
+@media (max-width: 756px) {
+    #contact .contactBox{
+        width: 90vw;
+    }
+    :root{
+        --div-width: 70vw;
+        --photo-size: 120px;
+        --icon-size: 40px;
+    }
+}
+
+@media (min-width: 756px) {
+    :root{
+        --div-width: 400px;
+        --photo-size: 150px;
+        --icon-size: 45px;
+    }
+}
+#contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#contact h3{
+    color: #e8ecff;
+    margin-left: 20px;
+}
+
+#contact .titles{
+    width: 100%;
+}
+
+#contact .contactBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    margin-bottom: 10vh;
+}
+
+#contact .photo{
+    width: var(--photo-size);
+    height: var(--photo-size);
+    padding: 8px;
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 0px 60px 40px -20px rgba(0,0,0,0.75);
+    transform: translateY(-30%);
+}
+
+#contact .contactBox div{
+    width: var(--div-width);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: transform 0.7s;
+    cursor: pointer;
+}
+
+#contact .contactBox div:hover{
+    transform: scale(1.05);
+}
+
+#contact .contactBox div img{
+    width: var(--icon-size);
+    height: var(--icon-size);
+    padding: 2px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#contact .github{
+    background-color: #24292F;
+    margin: 0 50px 3vh 50px;
+}
+
+#contact .github img{
+    background-color: #333a42;
+}
+
+#contact .gmail{
+    background-color: #DF5250;
+    margin: 0 50px 6vh 50px;
+}
+
+#contact .gmail img{
+    background-color: #EC6C7A;
+}
