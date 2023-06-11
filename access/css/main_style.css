@@ -23,7 +23,6 @@
     
 body {
     background-color: #e8ecff;
-    overflow-x: hidden;
 }
 
 @media (max-width: 756px) {

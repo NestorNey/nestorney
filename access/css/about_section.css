@@ -48,6 +48,7 @@
 #about {
     display: flex;
     justify-content: right;
+    overflow-x: hidden;
 }
   
 #about .aboutBox {

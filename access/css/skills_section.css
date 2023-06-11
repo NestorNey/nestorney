@@ -33,6 +33,7 @@
 
 #skills .percentages{
     justify-content: space-around;
+    overflow-x: hidden;
 }
 
 #skills .language{
