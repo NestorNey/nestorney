@@ -1,0 +1,105 @@
+/*------------------ Education ------------------*/
+@media (max-width: 756px) {
+    #experience .backLine{
+        display: none;
+    }
+    #experience .squareTray{
+        width: 100%;
+    }
+    #experience label{
+        height: 28px;
+    }
+    :root{
+        --infoBox-height: 295px
+    }
+}
+@media (min-width: 756px) {
+    #experience .squareTray{
+        width: 510px;
+        border-radius: 10px;
+    }
+    :root{
+        --infoBox-height: 250px
+    }
+}
+#experience {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #e8ecff 50%, #e8ecff);
+}
+
+#experience .experienceBox {
+    align-self: center;
+    width: 100%;
+}
+
+#experience #etitle{
+    margin-bottom: 50px;
+}
+
+#experience nav{
+    display: inline;
+}
+
+#experience .squareTray{
+    background-color: #0B2B40;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    color: #cbcee0;
+    box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
+    transition: height .2s;
+    overflow: hidden;
+}
+
+#experience .squareTray:hover{
+    background-color: #071a27;
+}
+
+#experience .checkboxSquareTray:checked + .squareTray{
+    height: var(--infoBox-height);
+    transition: height .2s;
+}
+
+#experience label{
+    padding: 2%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+#experience .info{
+    height: 100%;
+    background-color: #e8ecff;
+    color: #0B2B40;
+    padding: 20px;
+}
+
+#experience .checkboxSquareTray{
+    display: none;
+}
+
+#experience .calendar{
+    margin-top: 15px;
+    display: flex;
+}
+
+#experience .calendar img{
+    height: 17px;
+    width: 17px;
+}
+
+#experience .calendar h4{
+    color: #5c5c5c;
+}
+
+#experience .backLine{
+    position: relative;
+    padding: 0;
+    margin: auto;
+    width: 4px;
+    height: 30px;
+    background-color: #8a8a8a;
+    z-index: -1;
+}

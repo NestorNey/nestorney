@@ -1,138 +1,169 @@
-/*------------------ PM Section ------------------*/
-@media (max-width: 756px) {
-    .portfolio {
+@media (max-width: 1200px) {
+    .project {
         flex-wrap: wrap;
     }
-    .portfolio .text, .portfolio .text_phone{
-        margin-top: 15vh;
-        align-self: center;
+
+    .portfolio .project-description, .portfolio .project-showcase {
+        width: 80%;
     }
-    .portfolio .imgBox img{
-        margin: 0 5vw 0 5vw;
-    }
-    .portfolio .imgBox_phone{
-        display: flex;
-        justify-content: center;
-        width: 100vw;
-        overflow: hidden;
-    }
-    :root{
-        --pm-background-angle: to bottom;
-        --img-shadowSize: 15px;
-        --img-width: 90vw;
-        --img-height: 55vw;
-        --imgPhone-width: 275px;
-        --imgPhone-height: 540px;
-        --h3-textAlign: center;
-        --a-fontSize: 14px;
-        --a-margin: 0 auto 0 auto;
-    }
-}
-@media (min-width: 756px) {
-    .portfolio .text{
-        width: 45vw;
-        align-self: center;
-    }
-    .portfolio .text_phone{
-        width: 55vw;
-        align-self: center;
-    }
-    .portfolio .imgBox{
-        width: 55vw;
-        align-self: center;
-    }
-    .portfolio .imgBox_phone{
-        height: 80%;
-        width: 350px;
-        align-self: center;
-        overflow-y: scroll;
-    }
-    :root{
-        --pm-background-angle: 270deg;
-        --img-width: 490px;
-        --img-height: 300px;
-        --imgPhone-width: 275px;
-        --imgPhone-height: 540px;
-        --img-shadowSize: 24px;
-        --h3-textAlign: left;
-        --a-fontSize: 17px;
-        --a-margin: 0 0 0 10%;
-    }
-}
-#passwordmanager{
-    background-image: linear-gradient(var(--pm-background-angle), #bc2499 0, #ac199e 16.67%, #9910a3 33.33%, #810ba8 50%, #630ead 66.67%, #3916b1 83.33%, #001eb6 100%);
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-}
-#myroute{
-    background-image: linear-gradient(var(--pm-background-angle), #807874 0, #64696c 16.67%, #475a65 33.33%, #244a5e 50%, #003a57 66.67%, #002b51 83.33%, #001e4c 100%);
-}
-#mathle{
-    background-image: linear-gradient(var(--pm-background-angle), #723268 0, #652666 12.5%, #551a64 25%, #410d62 37.5%, #260360 50%, #00005e 62.5%, #00005d 75%, #00005c 87.5%, #00005b 100%);
 }
 
-.portfolio{
+@media (max-width: 700px) {
+    .project .project-description .project-text {
+        font-size: 12px;
+    }
+
+    .project .project-description h4 {
+        font-size: 14px;
+    }
+
+    .projects-gap h4 {
+        font-size: 14px;
+    }
+
+    .projects-gap .title {
+        font-size: 18px;
+    }
+
+    .portfolio .project-showcase .desktop {
+        width: 220px;
+    }
+    
+    .portfolio .project-showcase .mobile {
+        width: 90px;
+    }
+    
+    .portfolio .project-description .img-technologie {
+        width: 25px;
+    }
+}
+
+@media (min-width: 700px) {
+    .portfolio .project-showcase .desktop {
+        width: 500px;
+    }
+    
+    .portfolio .project-showcase .mobile {
+        width: 200px;
+    }
+
+    .portfolio .project-description .img-technologie {
+        width: 40px;
+    }
+
+    .project .project-description .project-text {
+        font-size: 16px;
+    }
+
+    .project .project-description h4 {
+        font-size: 18px;
+    }
+
+    .projects-gap h4 {
+        font-size: 16px;
+    }
+
+    .projects-gap .title {
+        font-size: 22px;
+    }
+
+    .portfolio .project-description, .portfolio .project-showcase {
+        width: 50%;
+    }
+}
+
+.project{
     display: flex;
-    height: 100vh;
+    align-items: center;
     justify-content: space-around;
     overflow: hidden;
 }
 
-.portfolio .text h3, .portfolio .text_phone h3{
-    text-align: var(--h3-textAlign);
-    padding: 0 10% 5% 10%;
-    color: #f3f4fc;
+.project h4, .project p {
+    text-align: center;
+    letter-spacing: 2px;
 }
 
-.portfolio .text h4, .portfolio .text_phone h4{
-    padding: 0 10% 0 10%;
-    margin-bottom: 5%;
-    color: #f3f4fc;
+.project h4 {
+    font-weight: 600;
 }
 
-.portfolio .text .vmButton, .portfolio .text_phone .vmButton{
-    width: fit-content;
-    padding: 10px;
-    margin: var(--a-margin);
-
-    font-size: var(--a-fontSize);
-    font-family: 'Roboto';
-    text-decoration: none;
-    color: #0B2B40;
-
-    background-color: #89D99C;
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: -3px 3px 0px 0px rgba(82, 82, 82);
-    transition: padding .5s;
-}
-  
-.portfolio .text .vmButton:hover, .portfolio .text_phone .vmButton:hover{
-    padding: 12px;
-}
-
-.portfolio .imgBox {
-    overflow: hidden;
+.portfolio .project {
+    display: flex;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.portfolio .project-section {
     display: flex;
+    align-items: center;
     justify-content: center;
 }
-.portfolio .imgBox_phone{
-    padding-top: 5%;
-    padding-bottom: 5%;
+
+.portfolio .project-description {
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.portfolio .imgBox_phone img{
-    width: var(--imgPhone-width);
-    height: var(--imgPhone-height);
-    margin: 20px;
-    box-shadow: 0px 0px var(--img-shadowSize) -6px rgba(0,0,0,1);
-    border-radius: 18px;
+.portfolio .project-showcase, .project .project-description h4 {
+    cursor: pointer;
 }
 
-.portfolio .imgBox img{
-    width: var(--img-width);
-    height: var(--img-height);
-    box-shadow: 0px 0px var(--img-shadowSize) -6px rgba(0,0,0,1);
+.portfolio .project-showcase img {
+    box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+}
+
+.portfolio .project-description .project-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.portfolio .project-showcase .img-showcase {
+    transform: scale(.8);
+    transition: transform .5s;
+}
+
+.portfolio .project-showcase:hover > .img-showcase {
+    transform: scale(.9);
+}
+
+
+.projects-gap {
+    display: grid;
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(400px, 1fr)
+        );
+    gap: 25px;
+}
+
+.sm-project {
+    cursor: pointer;
+    text-align: center;
+
+    margin: 25px;
+    padding: 20px;
+    background-color: #0B2B40;
+
+    box-shadow: -5px 6px 15px -6px rgba(0,0,0,0.75);
+    border-radius: 5px;
+}
+
+.sm-project .title {
+    color: #89D99C;
+}
+
+.sm-project h4 {
+    color: #cbcee0;
+}
+
+.sm-project img {
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    margin-bottom: 10px;
+    height: 70%;
     border-radius: 5px;
 }

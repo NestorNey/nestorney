@@ -3,10 +3,8 @@ var menuIsOpened = false
 function composeEmail() {
     let email = 'nestor.emmanuelas@gmail.com';
   
-    // Generar la URL del enlace de correo con el destinatario predefinido
     const emailLink = `mailto:${email}?subject=Hi! i to want talk with you!&body=Write your message here :)`;
   
-    // Abrir la URL del enlace en una nueva pestaña o ventana
     window.open(emailLink);
 }
 

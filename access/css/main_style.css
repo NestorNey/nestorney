@@ -4,6 +4,8 @@
     padding: 0;
     scrollbar-width: auto;
     scrollbar-color: #a0a0a0;
+
+    user-select: none;
 }
 
 /* ===== Scrollbar CSS ===== */
@@ -103,9 +105,14 @@ h3{
 }
 
 h4{
-    font-family: 'Roboto';
+    font-family: Arial;
     text-align: justify;
     font-weight: 500;
+}
+
+p {
+    font-family: Arial;
+    font-weight: 300;
 }
 
 /*____________________________________________________
